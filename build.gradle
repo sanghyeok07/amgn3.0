@@ -21,6 +21,7 @@ configurations {
 }
 
 repositories {
+
 	mavenCentral()
 }
 
@@ -37,6 +38,7 @@ dependencies {
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.security:spring-security-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	runtimeOnly 'mysql:mysql-connector-java:8.0.33'
 }
 
 tasks.named('test') {
